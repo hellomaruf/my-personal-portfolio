@@ -38,8 +38,8 @@
   </head>
   <body class="font">
     <!-- navbar Section -->
-    <nav class="max-w-7xl mx-auto">
-      <div class="navbar bg-base-100">
+    <nav class="w-full fixed bg-base-100 z-10">
+      <div class="navbar max-w-7xl mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -108,7 +108,9 @@
               />
             </svg>
           </label>
-          <button class="btn btn-warning rounded-full font-semibold hidden lg:flex">
+          <button
+            class="btn btn-warning rounded-full font-semibold hidden lg:flex"
+          >
             <i class="ri-linkedin-fill text-base"></i>
             Linkedin
           </button>
@@ -117,26 +119,39 @@
     </nav>
     <!-- hero section -->
     <header>
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col gap-8 lg:gap-28 lg:flex-row-reverse">
+      <div class="hero min-h-screen bg-base-200 pt-16 lg:pt-0">
+        <div
+          class="hero-content flex-col-reverse gap-8 lg:gap-28 lg:flex-row-reverse"
+        >
           <div class="relative">
             <img src="assets/me1.png" class="max-w-full lg:max-w-md" />
             <a href="https://github.com/hellomaruf">
-                <div
-              class="flex gap-2 items-center shadow-2xl cursor-pointer bg-white absolute top-48 p-2 lg:p-3 rounded-2xl -left-0 lg:-left-28 animate-bounce animate-infinite animate-duration-3000 animate-delay-[4ms]"
-            >
-              <img src="assets/git.png" class="w-8 h-8 lg:h-10 lg:w-10" alt="" srcset="" />
-              <div class="">
-                <h3 class="text-primary-content font-bold text-gray-900 text-sm lg:text-md">
-                  Github
-                </h3>
-                <p class="text-primary-content text-gray-600">@hellomaruf</p>
+              <div
+                class="flex gap-2 items-center shadow-2xl cursor-pointer bg-white absolute top-48 p-2 lg:p-3 rounded-2xl -left-0 lg:-left-28 animate-bounce animate-infinite animate-duration-3000 animate-delay-[6ms]"
+              >
+                <img
+                  src="assets/git.png"
+                  class="w-8 h-8 lg:h-10 lg:w-10"
+                  alt=""
+                  srcset=""
+                />
+                <div class="">
+                  <h3
+                    class="text-primary-content font-bold text-gray-900 text-sm lg:text-md"
+                  >
+                    Github
+                  </h3>
+                  <p
+                    class="text-primary-content text-sm lg:text-md text-gray-600"
+                  >
+                    @hellomaruf
+                  </p>
+                </div>
               </div>
-            </div>
             </a>
           </div>
-          <div class="">
-            <h1 class="text-5xl font-normal">
+          <div class="text-center lg:text-left pt-6 lg:pt-0">
+            <h1 class="text-4xl lg:text-5xl font-normal">
               Hello People👋 <br />
               I'm Maruf Ahmed a <span class="font-bold">Web Developer</span>
             </h1>
@@ -146,13 +161,56 @@
               stronger.🧠
             </p>
             <button class="btn btn-warning rounded-full">
-              <a href="assets/cv.png" download>Download CV<i class="ri-download-line p-3 text-md"></i></a>
+              <a href="assets/cv.png" download
+                >Download CV<i class="ri-download-line p-3 text-md"></i
+              ></a>
             </button>
           </div>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- About section -->
+      <div class="hero bg-base-200">
+        <div class="hero-content gap-4 lg:gap-24 flex-col-reverse lg:flex-row">
+          <div class="relative">
+            <img src="assets/portfolio.png" class="max-w-full lg:max-w-md" />
+            <div
+              class="bg-warning bg-opacity-65 text-black absolute bottom-20 lg:-left-7 rounded-xl p-3 lg:p-4"
+            >
+              <i class="ri-brain-line text-xl"></i>
+              <p class="max-w-48 text-sm">
+                Success usually comes to those who are too busy looking for it
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="pb-4">This quote is very close to my heart.</p>
+            <div
+              class="bg-slate-800 opacity-45 text-gray-50 border-l-8 font-bold text-2xl lg:text-4xl px-6 py-3 rounded-xl"
+            >
+              <div class="">
+                <h1>
+                  <span class="text-[#ffbe00]">"</span>Learn as if you will live
+                  forever, live like you will die tomorrow
+                </h1>
+              </div>
+            </div>
+            <p class="py-6">
+              I'm a <span class="font-bold">Web Developer</span> with a focus on
+              the MERN stack, but still exploring other technologies and
+              frameworks that catch my interest! Worked with
+              <span class="font-bold">software engineering</span> for more than
+              three years.I'm from Bangladesh, Barishal.I passed Diploma in
+              <span class="font-bold">Computer Science</span> in 2023. I am
+              still working to increase my experience.So currently I am doing
+              programming hero course. Hopefully I can take something good from
+              here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
