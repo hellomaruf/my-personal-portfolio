@@ -36,7 +36,7 @@
       }
     </style>
   </head>
-  <body class="font scroll-smooth">
+  <body class="font scroll-smooth ">
     <!-- navbar Section -->
     <nav class="w-full fixed bg-base-100 z-20">
       <div class="navbar max-w-7xl mx-auto">
@@ -62,10 +62,12 @@
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Testimonial</a></li>
-              <li><a>Contact</a></li>
+            <li onclick="scrollToSection('home')"><a>Home</a></li>
+            <li  onclick="scrollToSection('about')"><a>About</a></li>
+            <li onclick="scrollToSection('skill')"><a>Skill</a></li>
+            <li onclick="scrollToSection('experience')"><a>Expriences</a></li>
+            <li onclick="scrollToSection('education')"><a>Education</a></li>
+            <li onclick="scrollToSection('project')"><a>Projects</a></li>
             </ul>
           </div>
           <div class="relative">
@@ -78,10 +80,12 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Testimonial</a></li>
-            <li><a>Contact</a></li>
+            <li onclick="scrollToSection('home')"><a>Home</a></li>
+              <li  onclick="scrollToSection('about')"><a>About</a></li>
+              <li onclick="scrollToSection('skill')"><a>Skill</a></li>
+              <li onclick="scrollToSection('experience')"><a>Expriences</a></li>
+              <li onclick="scrollToSection('education')"><a>Education</a></li>
+              <li onclick="scrollToSection('project')"><a>Projects</a></li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -122,13 +126,14 @@
       </div>
     </nav>
     <!-- hero section -->
-    <header>
+    <header id="home">
       <div class="hero min-h-screen bg-base-200 pt-16 lg:pt-0">
         <div
           class="hero-content flex-col-reverse gap-8 lg:gap-28 lg:flex-row-reverse"
         >
           <div class="relative">
             <img src="assets/me1.png" class="max-w-full lg:max-w-md" />
+            
             <a href="https://github.com/hellomaruf">
               <div
                 class="flex gap-2 items-center shadow-2xl cursor-pointer bg-white absolute top-48 p-2 lg:p-3 rounded-2xl -left-0 lg:-left-28 animate-bounce animate-infinite animate-duration-3000 animate-delay-[6ms]"
@@ -173,9 +178,10 @@
         </div>
       </div>
     </header>
+    
     <main>
       <!-- About section -->
-      <div class="hero bg-base-200 pb-16">
+      <div id="about" class="hero bg-base-200 pb-16 pt-10">
         <div class="hero-content gap-4 lg:gap-24 flex-col-reverse lg:flex-row">
           <div class="relative">
             <img src="assets/portfolio.png" class="max-w-full lg:max-w-md" />
@@ -216,10 +222,10 @@
       </div>
 
       <!-- Skill section -->
-      <div class="bg-base-200 md:pt-14">
+      <div id="skill" class="bg-base-200 md:pt-14">
         <div class="max-w-7xl mx-auto">
           <div class="flex justify-center relative">
-            <h1 class="font-bold text-3xl md:text-4xl text-center pb-12 z-10">📈Skills</h1>
+            <h1 class="font-bold text-3xl pt-7 md:text-4xl text-center pb-12 z-10">📈Skills</h1>
             <!-- <div class="h-3 w-20 bg-yellow-400 absolute top-6  z-0"></div> -->
           </div>
           <div
@@ -495,7 +501,7 @@
       </div>
 
       <!-- experience section -->
-      <div class="bg-base-200 pt-16 md:pt-28 px-5">
+      <div id="experience" class="bg-base-200 pt-16 md:pt-28 px-5">
         <div class="flex justify-center relative">
           <h1 class="font-bold text-3xl md:text-4xl text-center pb-8 md:pb-12 z-10">
             👨🏻‍💻Expriences
@@ -548,7 +554,7 @@
       </div>
 
       <!-- Education section -->
-      <div class="bg-base-200 px-5 pt-16 md:pt-28">
+      <div id="education" class="bg-base-200 px-5 pt-16 md:pt-28">
         <h1 class="font-bold text-3xl md:text-4xl text-center pb-8 md:pb-12 z-10">👨🏻‍🎓Education</h1>
         <div class="mockup-window bg-base-300 max-w-7xl mx-auto">
           <div class="flex items-center flex-col md:flex-row pb-10  px-3 md:px-7">
@@ -606,7 +612,7 @@
 
       <!-- Project section -->
       <!-- Card Blog -->
-<div class="bg-base-200 pt-16 md:pt-28 pb-16 md:pb-32">
+<div id="project" class="bg-base-200 pt-16 md:pt-28 pb-16 md:pb-32">
 <div class="max-w-7xl mx-auto">
   <h1 class="font-bold text-3xl md:text-4xl text-center pb-8 md:pb-12 z-10">🗳️Projects</h1>
 
@@ -821,5 +827,8 @@
       </div>
       <!-- End Grid -->
     </footer>
+
+    <!-- javaScript file link -->
+    <script src="index.js"></script>
   </body>
 </html>
